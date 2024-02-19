@@ -1,0 +1,8 @@
+include LICENSE.txt
+include HISTORY.rst
+include README.rst
+include fllm_cli_bdist_wheel.py
+include foundationallm/__init__.py
+include foundationallm/cli/__init__.py
+include foundationallm/cli/__main__.py
+

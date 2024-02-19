@@ -1,0 +1,42 @@
+[
+  {
+    "Command": "az account",
+    "AzureServiceName": "Accounts",
+    "URL": ""
+  },
+  {
+    "Command": "az cloud",
+    "AzureServiceName": "FLLM CLI",
+    "URL": ""
+  },
+  {
+    "Command": "az configuration",
+    "AzureServiceName": "FLLM CLI",
+    "URL": ""
+  },
+  {
+    "Command": "az extension",
+    "AzureServiceName": "FLLM CLI",
+    "URL": ""
+  },
+  {
+    "Command": "fllm login",
+    "AzureServiceName": "FLLM CLI",
+    "URL": ""
+  },
+  {
+    "Command": "fllm logout",
+    "AzureServiceName": "FLLM CLI",
+    "URL": ""
+  },
+  {
+    "Command": "fllm upgrade",
+    "AzureServiceName": "FLLM CLI",
+    "URL": ""
+  },
+  {
+    "Command": "fllm version",
+    "AzureServiceName": "FLLM CLI",
+    "URL": ""
+  }
+]
