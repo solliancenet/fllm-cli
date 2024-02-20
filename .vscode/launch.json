@@ -9,7 +9,7 @@
             "type": "debugpy",
             "request": "launch",
             "program": "${workspaceFolder}/foundationallm/cli/__main__.py",
-            "console": "integratedTerminal",
+            "console": "internalConsole",
             "env" :{
                 "PYTHONPATH": "C:/github/solliancenet/fllm-cli-core;${workspaceFolder}",
                 "PYTHONHTTPSVERIFY" : "0",
@@ -73,7 +73,7 @@
             "type": "debugpy",
             "request": "launch",
             "program": "${workspaceFolder}/foundationallm/cli/__main__.py",
-            "console": "integratedTerminal",
+            "console": "internalConsole",
             "env" :{
                 "PYTHONPATH": "C:/github/solliancenet/fllm-cli-core;${workspaceFolder}",
                 "PYTHONHTTPSVERIFY" : "0",
@@ -95,7 +95,7 @@
             "type": "debugpy",
             "request": "launch",
             "program": "${workspaceFolder}/foundationallm/cli/__main__.py",
-            "console": "integratedTerminal",
+            "console": "internalConsole",
             "env" :{
                 "PYTHONPATH": "C:/github/solliancenet/fllm-cli-core;${workspaceFolder}",
                 "PYTHONHTTPSVERIFY" : "0",
@@ -124,7 +124,7 @@
             "type": "debugpy",
             "request": "launch",
             "program": "${workspaceFolder}/foundationallm/cli/__main__.py",
-            "console": "integratedTerminal",
+            "console": "internalConsole",
             "env" :{
                 "PYTHONPATH": "C:/github/solliancenet/fllm-cli-core;${workspaceFolder}",
                 "PYTHONHTTPSVERIFY" : "0",
@@ -147,7 +147,7 @@
             "type": "debugpy",
             "request": "launch",
             "program": "${workspaceFolder}/foundationallm/cli/__main__.py",
-            "console": "integratedTerminal",
+            "console": "internalConsole",
             "env" :{
                 "PYTHONPATH": "C:/github/solliancenet/fllm-cli-core;${workspaceFolder}",
                 "PYTHONHTTPSVERIFY" : "0",
@@ -168,7 +168,7 @@
             "type": "debugpy",
             "request": "launch",
             "program": "${workspaceFolder}/foundationallm/cli/__main__.py",
-            //"console": "integratedTerminal",
+            //"console": "internalConsole",
             "console": "internalConsole",
             "env" :{
                 "PYTHONPATH": "C:/github/solliancenet/fllm-cli-core;${workspaceFolder}",
@@ -186,14 +186,14 @@
                 "--name",
                 "FLLMDocumentation",
                 "--body",
-                "{\"id\":\"blah\",\"objectId\":\"blah\",\"contentIdentifier\":null,\"processingType\":\"blah\",\"steps\":[]}"
+                "{configurationReferences:{AuthenticationType:'FoundationaLLM:Vectorization:ContentSources:FLLMDocumentation:AuthenticationType',ConnectionString:'FoundationaLLM:Vectorization:ContentSources:FLLMDocumentation:ConnectionString'},contentSource:AzureDataLake,name:FLLMDocumentation,objectId:/instances/1e22cd2a-7b81-4160-b79f-f6443e3a6ac2/providers/FoundationaLLM.Vectorization/contentsourceprofiles/FLLMDocumentation,settings:{},type:content-source-profile}"
             ]
         },{
             "name": "FLLM CLI Agent List",
             "type": "debugpy",
             "request": "launch",
             "program": "${workspaceFolder}/foundationallm/cli/__main__.py",
-            "console": "integratedTerminal",
+            "console": "internalConsole",
             "env" :{
                 "PYTHONPATH": "C:/github/solliancenet/fllm-cli-core;${workspaceFolder}",
                 "PYTHONHTTPSVERIFY" : "0",
@@ -213,7 +213,7 @@
             "type": "debugpy",
             "request": "launch",
             "program": "${workspaceFolder}/foundationallm/cli/__main__.py",
-            //"console": "integratedTerminal",
+            //"console": "internalConsole",
             "console": "internalConsole",
             "env" :{
                 "PYTHONPATH": "C:/github/solliancenet/fllm-cli-core;${workspaceFolder}",
@@ -230,7 +230,7 @@
                 "--name",
                 "FLLMDocumentation",
                 "--body",
-                "{type:knowledge-management,name:interest-rates3,object_id:/instances/1e22cd2a-7b81-4160-b79f-f6443e3a6ac2/providers/FoundationaLLM.Agent/agents/interest-rates,description:'Knowledge Management Agent that analyzes minimum interest rates.',indexing_profile:'/instances/1bc45134-6985-48b9-9466-c5f70ddaaa65/providers/FoundationaLLM.Vectorization/indexingprofiles/AzureAISearch_Default_001',embedding_profile:'/instances/1bc45134-6985-48b9-9466-c5f70ddaaa65/providers/FoundationaLLM.Vectorization/textembeddingprofiles/AzureOpenAI_Embedding',language_model:{type:openai,provider:microsoft,temperature:0,use_chat:true,api_endpoint:'FoundationaLLM:AzureOpenAI:API:Endpoint',api_key:'FoundationaLLM:AzureOpenAI:API:Key',api_version:'FoundationaLLM:AzureOpenAI:API:Version',version:'FoundationaLLM:AzureOpenAI:API:Completions:ModelVersion',deployment:'FoundationaLLM:AzureOpenAI:API:Completions:DeploymentName'},sessions_enabled:true,conversation_history:{enabled:true,max_history:5},gatekeeper:{use_system_setting:false,options:[]},orchestrator:LangChain,prompt:/instances/1e22cd2a-7b81-4160-b79f-f6443e3a6ac2/providers/FoundationaLLM.Prompt/prompts/interest-rates-analyst}"
+                "{type:knowledge-management,name:interest-rates3,description:'Knowledge Management Agent that analyzes minimum interest rates.',indexing_profile_object_id:'/instances/1bc45134-6985-48b9-9466-c5f70ddaaa65/providers/FoundationaLLM.Vectorization/indexingprofiles/AzureAISearch_Default_001',text_embedding_profile_object_id:'/instances/1bc45134-6985-48b9-9466-c5f70ddaaa65/providers/FoundationaLLM.Vectorization/textembeddingprofiles/AzureOpenAI_Embedding',language_model:{type:openai,provider:microsoft,temperature:0,use_chat:true,api_endpoint:'FoundationaLLM:AzureOpenAI:API:Endpoint',api_key:'FoundationaLLM:AzureOpenAI:API:Key',api_version:'FoundationaLLM:AzureOpenAI:API:Version',version:'FoundationaLLM:AzureOpenAI:API:Completions:ModelVersion',deployment:'FoundationaLLM:AzureOpenAI:API:Completions:DeploymentName'},sessions_enabled:true,conversation_history:{enabled:true,max_history:5},gatekeeper:{use_system_setting:false,options:[]},orchestrator:LangChain,prompt_object_id:/instances/1e22cd2a-7b81-4160-b79f-f6443e3a6ac2/providers/FoundationaLLM.Prompt/prompts/interest-rates-analyst}"
             ]
         },
         {
@@ -238,7 +238,7 @@
             "type": "debugpy",
             "request": "launch",
             "program": "${workspaceFolder}/foundationallm/cli/__main__.py",
-            //"console": "integratedTerminal",
+            //"console": "internalConsole",
             "console": "internalConsole",
             "env" :{
                 "PYTHONPATH": "C:/github/solliancenet/fllm-cli-core;${workspaceFolder}",
@@ -261,7 +261,7 @@
             "type": "debugpy",
             "request": "launch",
             "program": "${workspaceFolder}/foundationallm/cli/__main__.py",
-            //"console": "integratedTerminal",
+            //"console": "internalConsole",
             "console": "internalConsole",
             "env" :{
                 "PYTHONPATH": "C:/github/solliancenet/fllm-cli-core;${workspaceFolder}",
@@ -272,6 +272,97 @@
             },
             "args": [
                 "agent",
+                "delete",
+                "--instance-id",
+                "1e22cd2a-7b81-4160-b79f-f6443e3a6ac2",
+                "--name",
+                "interest-rates2",
+                "--yes"
+            ]
+        },{
+            "name": "FLLM CLI Prompt List",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/foundationallm/cli/__main__.py",
+            "console": "internalConsole",
+            "env" :{
+                "PYTHONPATH": "C:/github/solliancenet/fllm-cli-core;${workspaceFolder}",
+                "PYTHONHTTPSVERIFY" : "0",
+                "REQUESTS_CA_BUNDLE" : "C:/Users/given/OneDrive/Desktop/FiddlerRoot.pem",
+                //"http_proxy" : "http://127.0.0.1:8888",
+                //"https_proxy" : "http://127.0.0.1:8888"
+            },
+            "args": [
+                "prompt",
+                "list",
+                "--instance-id",
+                "1e22cd2a-7b81-4160-b79f-f6443e3a6ac2"
+            ]
+        },
+        {
+            "name": "FLLM CLI Prompt Upsert",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/foundationallm/cli/__main__.py",
+            //"console": "internalConsole",
+            "console": "internalConsole",
+            "env" :{
+                "PYTHONPATH": "C:/github/solliancenet/fllm-cli-core;${workspaceFolder}",
+                "PYTHONHTTPSVERIFY" : "0",
+                "REQUESTS_CA_BUNDLE" : "C:/Users/given/OneDrive/Desktop/FiddlerRoot.pem",
+                //"http_proxy" : "http://127.0.0.1:8888",
+                //"https_proxy" : "http://127.0.0.1:8888"
+            },
+            "args": [
+                "prompt",
+                "upsert",
+                "--instance-id",
+                "1e22cd2a-7b81-4160-b79f-f6443e3a6ac2",
+                "--name",
+                "FLLMDocumentation",
+                "--body",
+                "{type:knowledge-management,name:interest-rates3,description:'Knowledge Management Agent that analyzes minimum interest rates.',indexing_profile_object_id:'/instances/1bc45134-6985-48b9-9466-c5f70ddaaa65/providers/FoundationaLLM.Vectorization/indexingprofiles/AzureAISearch_Default_001',text_embedding_profile_object_id:'/instances/1bc45134-6985-48b9-9466-c5f70ddaaa65/providers/FoundationaLLM.Vectorization/textembeddingprofiles/AzureOpenAI_Embedding',language_model:{type:openai,provider:microsoft,temperature:0,use_chat:true,api_endpoint:'FoundationaLLM:AzureOpenAI:API:Endpoint',api_key:'FoundationaLLM:AzureOpenAI:API:Key',api_version:'FoundationaLLM:AzureOpenAI:API:Version',version:'FoundationaLLM:AzureOpenAI:API:Completions:ModelVersion',deployment:'FoundationaLLM:AzureOpenAI:API:Completions:DeploymentName'},sessions_enabled:true,conversation_history:{enabled:true,max_history:5},gatekeeper:{use_system_setting:false,options:[]},orchestrator:LangChain,prompt_object_id:/instances/1e22cd2a-7b81-4160-b79f-f6443e3a6ac2/providers/FoundationaLLM.Prompt/prompts/interest-rates-analyst}"
+            ]
+        },
+        {
+            "name": "FLLM CLI Prompt Show",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/foundationallm/cli/__main__.py",
+            //"console": "internalConsole",
+            "console": "internalConsole",
+            "env" :{
+                "PYTHONPATH": "C:/github/solliancenet/fllm-cli-core;${workspaceFolder}",
+                "PYTHONHTTPSVERIFY" : "0",
+                "REQUESTS_CA_BUNDLE" : "C:/Users/given/OneDrive/Desktop/FiddlerRoot.pem",
+                //"http_proxy" : "http://127.0.0.1:8888",
+                //"https_proxy" : "http://127.0.0.1:8888"
+            },
+            "args": [
+                "prompt",
+                "show",
+                "--instance-id",
+                "1e22cd2a-7b81-4160-b79f-f6443e3a6ac2",
+                "--name",
+                "FLLMDocumentation"
+            ]
+        },
+        {
+            "name": "FLLM CLI Prompt Delete",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/foundationallm/cli/__main__.py",
+            //"console": "internalConsole",
+            "console": "internalConsole",
+            "env" :{
+                "PYTHONPATH": "C:/github/solliancenet/fllm-cli-core;${workspaceFolder}",
+                "PYTHONHTTPSVERIFY" : "0",
+                "REQUESTS_CA_BUNDLE" : "C:/Users/given/OneDrive/Desktop/FiddlerRoot.pem",
+                //"http_proxy" : "http://127.0.0.1:8888",
+                //"https_proxy" : "http://127.0.0.1:8888"
+            },
+            "args": [
+                "prompt",
                 "delete",
                 "--instance-id",
                 "1e22cd2a-7b81-4160-b79f-f6443e3a6ac2",
