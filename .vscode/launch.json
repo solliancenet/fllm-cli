@@ -11,7 +11,7 @@
             "program": "${workspaceFolder}/foundationallm/cli/__main__.py",
             "console": "integratedTerminal",
             "env" :{
-                "PYTHONPATH": "C:/github/fllm/fllm-cli-core;${workspaceFolder}",
+                "PYTHONPATH": "C:/github/solliancenet/fllm-cli-core;${workspaceFolder}",
                 "PYTHONHTTPSVERIFY" : "0",
                 "REQUESTS_CA_BUNDLE" : "C:/Users/given/OneDrive/Desktop/FiddlerRoot.pem",
                 //"http_proxy" : "http://127.0.0.1:8888",
@@ -75,7 +75,7 @@
             "program": "${workspaceFolder}/foundationallm/cli/__main__.py",
             "console": "integratedTerminal",
             "env" :{
-                "PYTHONPATH": "C:/github/fllm/fllm-cli-core;${workspaceFolder}",
+                "PYTHONPATH": "C:/github/solliancenet/fllm-cli-core;${workspaceFolder}",
                 "PYTHONHTTPSVERIFY" : "0",
                 "REQUESTS_CA_BUNDLE" : "C:/Users/given/OneDrive/Desktop/FiddlerRoot.pem",
                 //"http_proxy" : "http://127.0.0.1:8888",
@@ -97,7 +97,7 @@
             "program": "${workspaceFolder}/foundationallm/cli/__main__.py",
             "console": "integratedTerminal",
             "env" :{
-                "PYTHONPATH": "C:/github/fllm/fllm-cli-core;${workspaceFolder}",
+                "PYTHONPATH": "C:/github/solliancenet/fllm-cli-core;${workspaceFolder}",
                 "PYTHONHTTPSVERIFY" : "0",
                 "REQUESTS_CA_BUNDLE" : "C:/Users/given/OneDrive/Desktop/FiddlerRoot.pem",
                 //"http_proxy" : "http://127.0.0.1:8888",
@@ -126,7 +126,7 @@
             "program": "${workspaceFolder}/foundationallm/cli/__main__.py",
             "console": "integratedTerminal",
             "env" :{
-                "PYTHONPATH": "C:/github/fllm/fllm-cli-core;${workspaceFolder}",
+                "PYTHONPATH": "C:/github/solliancenet/fllm-cli-core;${workspaceFolder}",
                 "PYTHONHTTPSVERIFY" : "0",
                 "REQUESTS_CA_BUNDLE" : "C:/Users/given/OneDrive/Desktop/FiddlerRoot.pem",
                 //"http_proxy" : "http://127.0.0.1:8888",
@@ -149,7 +149,7 @@
             "program": "${workspaceFolder}/foundationallm/cli/__main__.py",
             "console": "integratedTerminal",
             "env" :{
-                "PYTHONPATH": "C:/github/fllm/fllm-cli-core;${workspaceFolder}",
+                "PYTHONPATH": "C:/github/solliancenet/fllm-cli-core;${workspaceFolder}",
                 "PYTHONHTTPSVERIFY" : "0",
                 "REQUESTS_CA_BUNDLE" : "C:/Users/given/OneDrive/Desktop/FiddlerRoot.pem",
                 //"http_proxy" : "http://127.0.0.1:8888",
@@ -171,7 +171,7 @@
             //"console": "integratedTerminal",
             "console": "internalConsole",
             "env" :{
-                "PYTHONPATH": "C:/github/fllm/fllm-cli-core;${workspaceFolder}",
+                "PYTHONPATH": "C:/github/solliancenet/fllm-cli-core;${workspaceFolder}",
                 "PYTHONHTTPSVERIFY" : "0",
                 "REQUESTS_CA_BUNDLE" : "C:/Users/given/OneDrive/Desktop/FiddlerRoot.pem",
                 //"http_proxy" : "http://127.0.0.1:8888",
@@ -195,7 +195,7 @@
             "program": "${workspaceFolder}/foundationallm/cli/__main__.py",
             "console": "integratedTerminal",
             "env" :{
-                "PYTHONPATH": "C:/github/fllm/fllm-cli-core;${workspaceFolder}",
+                "PYTHONPATH": "C:/github/solliancenet/fllm-cli-core;${workspaceFolder}",
                 "PYTHONHTTPSVERIFY" : "0",
                 "REQUESTS_CA_BUNDLE" : "C:/Users/given/OneDrive/Desktop/FiddlerRoot.pem",
                 //"http_proxy" : "http://127.0.0.1:8888",
@@ -216,7 +216,7 @@
             //"console": "integratedTerminal",
             "console": "internalConsole",
             "env" :{
-                "PYTHONPATH": "C:/github/fllm/fllm-cli-core;${workspaceFolder}",
+                "PYTHONPATH": "C:/github/solliancenet/fllm-cli-core;${workspaceFolder}",
                 "PYTHONHTTPSVERIFY" : "0",
                 "REQUESTS_CA_BUNDLE" : "C:/Users/given/OneDrive/Desktop/FiddlerRoot.pem",
                 //"http_proxy" : "http://127.0.0.1:8888",
@@ -241,7 +241,7 @@
             //"console": "integratedTerminal",
             "console": "internalConsole",
             "env" :{
-                "PYTHONPATH": "C:/github/fllm/fllm-cli-core;${workspaceFolder}",
+                "PYTHONPATH": "C:/github/solliancenet/fllm-cli-core;${workspaceFolder}",
                 "PYTHONHTTPSVERIFY" : "0",
                 "REQUESTS_CA_BUNDLE" : "C:/Users/given/OneDrive/Desktop/FiddlerRoot.pem",
                 //"http_proxy" : "http://127.0.0.1:8888",
@@ -264,7 +264,7 @@
             //"console": "integratedTerminal",
             "console": "internalConsole",
             "env" :{
-                "PYTHONPATH": "C:/github/fllm/fllm-cli-core;${workspaceFolder}",
+                "PYTHONPATH": "C:/github/solliancenet/fllm-cli-core;${workspaceFolder}",
                 "PYTHONHTTPSVERIFY" : "0",
                 "REQUESTS_CA_BUNDLE" : "C:/Users/given/OneDrive/Desktop/FiddlerRoot.pem",
                 //"http_proxy" : "http://127.0.0.1:8888",

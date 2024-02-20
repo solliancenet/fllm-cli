@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: fllm-cli
-Version: 1.0.0
+Version: 1.0.1
 Summary: FoundationaLLM Command-Line Tools
 Home-page: https://github.com/solliancenet/fllm-cli
 Author: FoundationaLLM
@@ -17,9 +17,10 @@ Classifier: Programming Language :: Python :: 3.10
 Classifier: Programming Language :: Python :: 3.11
 Classifier: License :: OSI Approved :: MIT License
 Requires-Python: >=3.8.0
+License-File: LICENSE
 License-File: LICENSE.txt
 
-Microsoft FLLM CLI
+FLLM CLI
 ===================
 
 A great cloud needs great tools; we're excited to introduce *FLLM CLI*, our next generation multi-platform command line experience for FoundationLLM.
@@ -44,43 +45,7 @@ For usage and help content, pass in the ``-h`` parameter, for example:
 
 .. code-block:: console
 
-   $ fllm storage -h
-
-Highlights
-===========
-
-Here are a few features and concepts that can help you get the most out of the FLLM CLI.
-
-The following examples are showing using the ``--output table`` format, you can change your default using the ``$ fllm configure`` command.
-
-Tab Completion
-++++++++++++++
-
-We support tab-completion for groups, commands, and some parameters
-
-.. code-block:: console
-
-   # looking up resource group and name
-   $ fllm vm show -g [tab][tab]
-   AccountingGroup   RGOne  WebPropertiesRG
-   $ fllm vm show -g WebPropertiesRG -n [tab][tab]
-   StoreVM  Bizlogic
-   $ fllm vm show -g WebPropertiesRG -n Bizlogic
-
-Querying
-++++++++
-
-You can use the ``--query`` parameter and the JMESPath query syntax to customize your output.
-
-.. code-block:: console
-
-   $ fllm vm list --query '[].{name:name,os:storageProfile.osDisk.osType}'
-   Name                    Os
-   ----------------------  -------
-   storevm                 Linux
-   bizlogic                Linux
-   demo32111vm             Windows
-   dcos-master-39DB807E-0  Linux
+   $ fllm configure -h
 
 More Samples and Snippets
 +++++++++++++++++++++++++
@@ -89,16 +54,16 @@ For more usage examples, take a look at our `GitHub samples repo <http://github.
 Reporting issues and feedback
 =======================================
 
-If you encounter any bugs with the tool please file an issue in the `Issues <https://github.com/solliancenet/foundationallm/issues>`__ section of our GitHub repo.
+If you encounter any bugs with the tool please file an issue in the `Issues <https://github.com/solliancenet/fllm-cli/issues>`__ section of our GitHub repo.
 
 To provide feedback from the command line, try the ``fllm feedback`` command.
 
 License
 =======
 
-`MIT <https://github.com/solliancenet/foundationallm/blob/master/LICENSE.txt>`__
+`MIT <https://github.com/solliancenet/fllm-cli/blob/master/LICENSE.txt>`__
 
 Release History
 ===============
 
-See `FLLM CLI release notes <https://github.com/solliancenet/foundationallm/cli/release-notes-fllm-cli>`__.
+See `FLLM CLI release notes <https://github.com/solliancenet/fllm-cli/release-notes-fllm-cli>`__.

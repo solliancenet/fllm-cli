@@ -17,7 +17,7 @@ except ImportError:
     logger.warn("Wheel is not available, disabling bdist_wheel hook")
     cmdclass = {}
 
-VERSION = "1.0.0"
+VERSION = "1.0.1"
 # If we have source, validate that our version numbers match
 # This should prevent uploading releases with mismatched versions.
 try:
@@ -91,7 +91,7 @@ setup(
         'fllm.bat',
         'fllmps.ps1'
     ],
-    packages=find_packages(exclude=["*.tests", "*.tests.*", "tests.*", "tests", "foundationallm", "foundationallm.cli"]),
+    packages=find_packages(exclude=["*.tests", "*.tests.*", "tests.*", "tests"]),
     install_requires=DEPENDENCIES,
     python_requires='>=3.8.0',
     package_data={
