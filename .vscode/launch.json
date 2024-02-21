@@ -122,6 +122,40 @@
             ]
         },
         {
+            "name": "FLLM CLI Cloud Register",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/foundationallm/cli/__main__.py",
+            "console": "internalConsole",
+            "env" :{
+                "PYTHONPATH": "C:/github/solliancenet/fllm-cli-core;${workspaceFolder}",
+                "PYTHONHTTPSVERIFY" : "0",
+                "REQUESTS_CA_BUNDLE" : "C:/Users/given/OneDrive/Desktop/FiddlerRoot.pem",
+                //"http_proxy" : "http://127.0.0.1:8888",
+                //"https_proxy" : "http://127.0.0.1:8888"
+            },
+            "args": [
+                "cloud",
+                "register",
+                "--name",
+                "FllmCloud2",
+                "--endpoint-resource-manager",
+                "https://localhost:63267",
+                "--endpoint-active-directory",
+                "https://login.microsoftonline.com",
+                "--endpoint-active-directory-resource-id",
+                "https://management.core.windows.net/",
+                "--endpoint-active-directory-graph-resource-id",
+                "https://graph.windows.net/",
+                "--client-id",
+                "aa5cba99-e753-4d91-b2f8-85a6b650d022",
+                "--instance-id",
+                "1e22cd2a-7b81-4160-b79f-f6443e3a6ac2",
+                "--management-client-id",
+                "dc4b7d98-e404-4044-8040-4c7a5551e862"
+            ]
+        },
+        {
             "name": "FLLM CLI Login",
             "type": "debugpy",
             "request": "launch",
@@ -148,6 +182,26 @@
                 //"email openid profile AuditLog.Read.All Directory.AccessAsUser.All Group.ReadWrite.All User.ReadWrite.All"
                 //"api://FoundationaLLM-Management-Auth/Data.Manage"
                 "dc4b7d98-e404-4044-8040-4c7a5551e862/.default"
+            ]
+        },
+        {
+            "name": "FLLM CLI Login (Azure)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/foundationallm/cli/__main__.py",
+            "console": "internalConsole",
+            "env" :{
+                "PYTHONPATH": "C:/github/solliancenet/fllm-cli-core;${workspaceFolder}",
+                //"PYTHONHTTPSVERIFY" : "0",
+                //"REQUESTS_CA_BUNDLE" : "C:/Users/given/OneDrive/Desktop/FiddlerRoot.pem",
+                //"http_proxy" : "http://127.0.0.1:8888",
+                //"https_proxy" : "http://127.0.0.1:8888"
+            },
+            "args": [
+                "login",
+                "--tenant",
+                "d280491c-b27a-41bf-9623-21b60cf430b3",
+                "--allow-no-subscriptions"
             ]
         },
         {

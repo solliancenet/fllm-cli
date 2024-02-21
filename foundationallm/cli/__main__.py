@@ -49,7 +49,6 @@ try:
 
     if exit_code == 0:
         telemetry.set_success()
-        
 
     sys.exit(exit_code)
 
