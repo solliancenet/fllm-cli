@@ -38,7 +38,7 @@ short-summary: Manage Azure subscription information.
 helps['account clear'] = """
 type: command
 short-summary: Clear all subscriptions from the CLI's local cache.
-long-summary: To clear the current subscription, use 'fllm logout'.
+long-summary: To clear the current subscription, use 'az logout'.
 """
 
 helps['account list'] = """
@@ -78,16 +78,16 @@ long-summary: >
 examples:
     - name: Get an access token for the current account
       text: >
-        fllm account get-access-token
+        az account get-access-token
     - name: Get an access token for a specific subscription
       text: >
-        fllm account get-access-token --subscription 00000000-0000-0000-0000-000000000000
+        az account get-access-token --subscription 00000000-0000-0000-0000-000000000000
     - name: Get an access token for a specific tenant
       text: >
-        fllm account get-access-token --tenant 00000000-0000-0000-0000-000000000000
+        az account get-access-token --tenant 00000000-0000-0000-0000-000000000000
     - name: Get an access token to use with MS Graph API
       text: >
-        fllm account get-access-token --resource-type ms-graph
+        az account get-access-token --resource-type ms-graph
 """
 
 helps['self-test'] = """

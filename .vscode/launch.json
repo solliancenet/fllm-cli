@@ -5,6 +5,44 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "FLLM CLI Extension List",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/foundationallm/cli/__main__.py",
+            "console": "internalConsole",
+            "env" :{
+                "PYTHONPATH": "C:/github/solliancenet/fllm-cli-core;${workspaceFolder}",
+                "PYTHONHTTPSVERIFY" : "0",
+                "REQUESTS_CA_BUNDLE" : "C:/Users/given/OneDrive/Desktop/FiddlerRoot.pem",
+                //"http_proxy" : "http://127.0.0.1:8888",
+                //"https_proxy" : "http://127.0.0.1:8888"
+            },
+            "args": [
+                "extension",
+                "list-available"
+            ]
+        },
+        {
+            "name": "FLLM CLI Extension Add FLLM",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/foundationallm/cli/__main__.py",
+            "console": "internalConsole",
+            "env" :{
+                "PYTHONPATH": "C:/github/solliancenet/fllm-cli-core;${workspaceFolder}",
+                "PYTHONHTTPSVERIFY" : "0",
+                "REQUESTS_CA_BUNDLE" : "C:/Users/given/OneDrive/Desktop/FiddlerRoot.pem",
+                //"http_proxy" : "http://127.0.0.1:8888",
+                //"https_proxy" : "http://127.0.0.1:8888"
+            },
+            "args": [
+                "extension",
+                "add",
+                "--name",
+                "fllm"
+            ]
+        },
+        {
             "name": "FLLM CLI Test",
             "type": "debugpy",
             "request": "launch",

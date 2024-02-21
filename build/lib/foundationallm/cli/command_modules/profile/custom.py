@@ -56,7 +56,7 @@ def show_subscription(cmd, subscription=None):
 def get_access_token(cmd, subscription=None, resource=None, scopes=None, resource_type=None, tenant=None):
     """
     get AAD token to access to a specified resource.
-    Use 'fllm cloud show' command for other Azure resources
+    Use 'az cloud show' command for other Azure resources
     """
     if resource is None and resource_type:
         endpoints_attr_name = cloud_resource_type_mappings[resource_type]
