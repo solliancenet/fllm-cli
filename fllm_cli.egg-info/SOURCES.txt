@@ -33,3 +33,8 @@ foundationallm/cli/command_modules/profile/_format.py
 foundationallm/cli/command_modules/profile/_help.py
 foundationallm/cli/command_modules/profile/_validators.py
 foundationallm/cli/command_modules/profile/custom.py
+foundationallm/cli/command_modules/util/__init__.py
+foundationallm/cli/command_modules/util/_help.py
+foundationallm/cli/command_modules/util/_params.py
+foundationallm/cli/command_modules/util/commands.py
+foundationallm/cli/command_modules/util/custom.py

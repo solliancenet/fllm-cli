@@ -5,6 +5,23 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "FLLM CLI Upgrade",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/foundationallm/cli/__main__.py",
+            "console": "internalConsole",
+            "env" :{
+                "PYTHONPATH": "C:/github/solliancenet/fllm-cli-core;${workspaceFolder}",
+                "PYTHONHTTPSVERIFY" : "0",
+                "REQUESTS_CA_BUNDLE" : "C:/Users/given/OneDrive/Desktop/FiddlerRoot.pem",
+                //"http_proxy" : "http://127.0.0.1:8888",
+                //"https_proxy" : "http://127.0.0.1:8888"
+            },
+            "args": [
+                "upgrade"
+            ]
+        },
+        {
             "name": "FLLM CLI Extension List",
             "type": "debugpy",
             "request": "launch",
@@ -43,6 +60,26 @@
             ]
         },
         {
+            "name": "FLLM CLI Extension Remove FLLM",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/foundationallm/cli/__main__.py",
+            "console": "internalConsole",
+            "env" :{
+                "PYTHONPATH": "C:/github/solliancenet/fllm-cli-core;${workspaceFolder}",
+                "PYTHONHTTPSVERIFY" : "0",
+                "REQUESTS_CA_BUNDLE" : "C:/Users/given/OneDrive/Desktop/FiddlerRoot.pem",
+                //"http_proxy" : "http://127.0.0.1:8888",
+                //"https_proxy" : "http://127.0.0.1:8888"
+            },
+            "args": [
+                "extension",
+                "remove",
+                "--name",
+                "fllm"
+            ]
+        },
+        {
             "name": "FLLM CLI Test",
             "type": "debugpy",
             "request": "launch",
@@ -56,54 +93,10 @@
                 //"https_proxy" : "http://127.0.0.1:8888"
             },
             "args": [
-                //"--vesion"
+                //"--version"
                 //"login",
-                //"cloud",
-                //"list"
-
-                /*
-                "configuration",
-                "show",
-                "-h"
-                */
-
-                "prompt",
-                "show",
-                "--instance-id",
-                "1e22cd2a-7b81-4160-b79f-f6443e3a6ac2",
-                "--name",
-                "FLLMDocumentation"
-                
-                /*
-                "configuration",
-                "show",
-                "--instance-id",
-                "1e22cd2a-7b81-4160-b79f-f6443e3a6ac2",
-                "--resource-path",
-                "agents", 
-                "--resource-provider",
-                "FoundationaLLM.Agent"
-                */
-
-                /*
-                "configuration",
-                "show",
-                "--instance-id",
-                "1e22cd2a-7b81-4160-b79f-f6443e3a6ac2",
-                "--resource-path",
-                "agents/sotu-2023", 
-                "--resource-provider",
-                "FoundationaLLM.Agent"
-                */
-                
-                /*
-                "configuration",
-                "cache",
-                "agent",
-                "clear",
-                "--instance-id",
-                "1e22cd2a-7b81-4160-b79f-f6443e3a6ac2" 
-                */
+                "cloud",
+                "list"
             ]
         },
         {
