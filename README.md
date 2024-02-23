@@ -27,7 +27,7 @@
 - Create a new FLLM cloud (one for each FLLM instance you have, ex. DEV, PROD, STAGE, TEST)
 
     - Record your mgmt api uri for the target env
-    - Find your `tenantId`, `clientId` and `resourceId` in the `Microsoft Entra` Azure Portal.  The clientId is the id of the `FoundataionaLLM.ManagementClient` application and the resourceId is the id of the `FoundataionaLLm.Management` application.  The instance id can be found in your Application Config instance in the Azure Portal:
+    - Find your `tenantId`, `clientId` and `resourceId` in the `Microsoft Entra` Azure Portal.  The clientId is the id of the `FoundataionaLLM.ManagementClient` application and the resourceId is the id of the `FoundataionaLLm.Management` application.  The instance id can be found in your Application Config instance under the `FoundationaLLM:Instance:Id` key in the Azure Portal:
 
         ```powershell
         #mgmt api tenant id
@@ -42,7 +42,7 @@
         $instanceId = "1e22cd2a-7b81-4160-b79f-f6443e3a6ac2"
         ```
 
-	- Register a new FLLM Cloud. Set the `endpoint-active-directory` to the Management API endpoint:
+	- Register a new FLLM Cloud. Set the `endpoint-resource-manager` to the Management API endpoint (ex `https://localhost:63267`):
 
         ```powershell
         $cloud_name = "FllmCloud"
