@@ -229,7 +229,7 @@
             "program": "${workspaceFolder}/foundationallm/cli/__main__.py",
             "console": "internalConsole",
             "env" :{
-                "PYTHONPATH": "C:/github/solliancenet/fllm-cli-core;${workspaceFolder}",
+                "PYTHONPATH": "C:/github/solliancenet/fllm-cli-core;${workspaceFolder};c:/github/azure/azure-mgmt",
                 //"PYTHONHTTPSVERIFY" : "0",
                 //"REQUESTS_CA_BUNDLE" : "C:/Users/given/OneDrive/Desktop/FiddlerRoot.pem",
                 //"http_proxy" : "http://127.0.0.1:8888",
@@ -237,9 +237,9 @@
             },
             "args": [
                 "login",
-                "--tenant",
-                "d280491c-b27a-41bf-9623-21b60cf430b3",
-                "--allow-no-subscriptions"
+                //"--tenant",
+                //"d280491c-b27a-41bf-9623-21b60cf430b3",
+                //"--allow-no-subscriptions"
             ]
         },
         {
@@ -351,7 +351,7 @@
                 "--instance-id",
                 "1e22cd2a-7b81-4160-b79f-f6443e3a6ac2",
                 "--name",
-                "FLLMDocumentation",
+                "interest-rates3",
                 "--body",
                 "{type:knowledge-management,name:interest-rates3,description:'Knowledge Management Agent that analyzes minimum interest rates.',indexing_profile_object_id:'/instances/1bc45134-6985-48b9-9466-c5f70ddaaa65/providers/FoundationaLLM.Vectorization/indexingprofiles/AzureAISearch_Default_001',text_embedding_profile_object_id:'/instances/1bc45134-6985-48b9-9466-c5f70ddaaa65/providers/FoundationaLLM.Vectorization/textembeddingprofiles/AzureOpenAI_Embedding',language_model:{type:openai,provider:microsoft,temperature:0,use_chat:true,api_endpoint:'FoundationaLLM:AzureOpenAI:API:Endpoint',api_key:'FoundationaLLM:AzureOpenAI:API:Key',api_version:'FoundationaLLM:AzureOpenAI:API:Version',version:'FoundationaLLM:AzureOpenAI:API:Completions:ModelVersion',deployment:'FoundationaLLM:AzureOpenAI:API:Completions:DeploymentName'},sessions_enabled:true,conversation_history:{enabled:true,max_history:5},gatekeeper:{use_system_setting:false,options:[]},orchestrator:LangChain,prompt_object_id:/instances/1e22cd2a-7b81-4160-b79f-f6443e3a6ac2/providers/FoundationaLLM.Prompt/prompts/interest-rates-analyst}"
             ]

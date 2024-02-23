@@ -18,7 +18,7 @@ from knack.completion import ARGCOMPLETE_ENV_NAME
 from knack.log import get_logger
 
 __author__ = "FoundationaLLM <foundationallm@solliancenet>"
-__version__ = "1.0.0b3"
+__version__ = "1.0.0b5"
 
 try:
     uuid.uuid1()
