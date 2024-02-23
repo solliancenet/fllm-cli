@@ -18,7 +18,7 @@ from knack.completion import ARGCOMPLETE_ENV_NAME
 from knack.log import get_logger
 
 __author__ = "FoundationaLLM <foundationallm@solliancenet>"
-__version__ = "1.0.0b2"
+__version__ = "1.0.0b3"
 
 try:
     uuid.uuid1()
@@ -38,9 +38,9 @@ telemetry.set_application(az_cli, ARGCOMPLETE_ENV_NAME)
 init_finish_time = timeit.default_timer()
 exit_code = None
 
-import ssl
-ssl._create_default_https_context = ssl._create_unverified_context
-ssl.SSLContext.verify_mode = ssl.VerifyMode.CERT_OPTIONAL
+#import ssl
+#ssl._create_default_https_context = ssl._create_unverified_context
+#ssl.SSLContext.verify_mode = ssl.VerifyMode.CERT_OPTIONAL
 
 try:
     telemetry.start()
@@ -49,7 +49,6 @@ try:
 
     if exit_code == 0:
         telemetry.set_success()
-        
 
     sys.exit(exit_code)
 
