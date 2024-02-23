@@ -104,11 +104,16 @@
     - https://github.com/solliancenet/fllm-cli-core
     - https://github.com/solliancenet/fllm-aaz-dev-tools
 
-- Run the FLLM project
-- Browse to the Mgmt API and the `/swagger` endpoint
-- Copy the swagger to the following folders:
+- Clone the FLLM repo:
+    - https://github.com/solliancenet/foundationallm
+- Run the FLLM project (specifically the Management API)
+- Browse to the Mgmt API and the `/swagger` endpoint, select the link to view the swagger file
+- Copy the swagger file contents to the following folders:
     - C:\github\solliancenet\fllm-rest-api-specs\specification\fllm\resource-manager\FoundationLL.* folders
-    Agent, configuration, Prompt, Vectorization
+    - Agent
+    - Configuration
+    - Prompt
+    - Vectorization
 - Remove the /status* endpoints from each
 
 - Run the fllm-aaz-dev-tools (two projects - web/api)
