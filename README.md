@@ -14,7 +14,7 @@
     ```PowerShell
     fllm extension list
     fllm extension remove --name fllm-cli-extension
-    fllm extension add --name fllm
+    fllm extension add --name fllm-cli-extension
     ```
 
 - Login to Azure Cloud (this is necessary to get a user context)
@@ -166,9 +166,16 @@
         - vectorization
     - Select **Generate**, then **Generate all**
 
-- Create the FLLM core wheel
+- Fix the **type** ordering
+    - Open the `C:\github\solliancenet\fllm-cli-extensions\src\fllm\fllmext_fllm\aaz\latest\agent\_upsert.py`
+    - Edit the ordering of the `content` function props
+    - Ensure the `type` property is first
+    - Save the file
+    - Repeat for any other `upsert` methods that require `type` to be first
 
-    - Browse to the FLLM cli extension folders
+- Create the FLLM cli wheel
+
+    - Browse to the FLLM cli folders
     - Run the following:
     ```cmd
     cd C:\github\solliancenet\fllm-cli

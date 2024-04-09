@@ -118,7 +118,7 @@
                 "agent",
                 "clear",
                 "--instance-id",
-                "1e22cd2a-7b81-4160-b79f-f6443e3a6ac2" 
+                "d540d243-d4ed-43f6-890e-8bc1342f885c" 
             ]
         },
         {
@@ -138,9 +138,9 @@
                 "cloud",
                 "register",
                 "--name",
-                "FllmCloud2",
+                "FllmCloud3",
                 "--endpoint-resource-manager",
-                "https://localhost:63267",
+                "https://camanagementapi63hvhar5z5zz2.yellowbeach-19e9eec8.eastus.azurecontainerapps.io",
                 "--endpoint-active-directory",
                 "https://login.microsoftonline.com",
                 "--endpoint-active-directory-resource-id",
@@ -150,7 +150,7 @@
                 "--client-id",
                 "aa5cba99-e753-4d91-b2f8-85a6b650d022",
                 "--instance-id",
-                "1e22cd2a-7b81-4160-b79f-f6443e3a6ac2",
+                "d540d243-d4ed-43f6-890e-8bc1342f885c",
                 "--management-client-id",
                 "dc4b7d98-e404-4044-8040-4c7a5551e862"
             ]
@@ -171,6 +171,26 @@
             "args": [
                 "cloud",
                 "show"
+            ]
+        },
+        {
+            "name": "FLLM CLI Cloud Set",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/foundationallm/cli/__main__.py",
+            "console": "internalConsole",
+            "env" :{
+                "PYTHONPATH": "C:/github/solliancenet/fllm-cli-core;${workspaceFolder}",
+                "PYTHONHTTPSVERIFY" : "0",
+                "REQUESTS_CA_BUNDLE" : "C:/Users/given/OneDrive/Desktop/FiddlerRoot.pem",
+                //"http_proxy" : "http://127.0.0.1:8888",
+                //"https_proxy" : "http://127.0.0.1:8888"
+            },
+            "args": [
+                "cloud",
+                "set",
+                "--name",
+                "FllmCloud3"
             ]
         },
         {
@@ -219,6 +239,7 @@
                 "--scope",
                 //"email openid profile AuditLog.Read.All Directory.AccessAsUser.All Group.ReadWrite.All User.ReadWrite.All"
                 //"api://FoundationaLLM-Management-Auth/Data.Manage"
+                //"aa5cba99-e753-4d91-b2f8-85a6b650d022/.default"
                 "dc4b7d98-e404-4044-8040-4c7a5551e862/.default"
             ]
         },
@@ -260,7 +281,7 @@
                 "contentsourceprofile",
                 "show",
                 "--instance-id",
-                "1e22cd2a-7b81-4160-b79f-f6443e3a6ac2",
+                "d540d243-d4ed-43f6-890e-8bc1342f885c",
                 "--name",
                 "FLLMDocumentation" 
             ]
@@ -283,7 +304,7 @@
                 "contentsourceprofile",
                 "list",
                 "--instance-id",
-                "1e22cd2a-7b81-4160-b79f-f6443e3a6ac2"
+                "d540d243-d4ed-43f6-890e-8bc1342f885c"
             ]
         },
         {
@@ -305,11 +326,11 @@
                 "contentsourceprofile",
                 "upsert",
                 "--instance-id",
-                "1e22cd2a-7b81-4160-b79f-f6443e3a6ac2",
+                "d540d243-d4ed-43f6-890e-8bc1342f885c",
                 "--name",
                 "FLLMDocumentation",
                 "--body",
-                "{configurationReferences:{AuthenticationType:'FoundationaLLM:Vectorization:ContentSources:FLLMDocumentation:AuthenticationType',ConnectionString:'FoundationaLLM:Vectorization:ContentSources:FLLMDocumentation:ConnectionString'},contentSource:AzureDataLake,name:FLLMDocumentation,objectId:/instances/1e22cd2a-7b81-4160-b79f-f6443e3a6ac2/providers/FoundationaLLM.Vectorization/contentsourceprofiles/FLLMDocumentation,settings:{},type:content-source-profile}"
+                "{configurationReferences:{AuthenticationType:'FoundationaLLM:Vectorization:ContentSources:FLLMDocumentation:AuthenticationType',ConnectionString:'FoundationaLLM:Vectorization:ContentSources:FLLMDocumentation:ConnectionString'},contentSource:AzureDataLake,name:FLLMDocumentation,objectId:/instances/d540d243-d4ed-43f6-890e-8bc1342f885c/providers/FoundationaLLM.Vectorization/contentsourceprofiles/FLLMDocumentation,settings:{},type:content-source-profile}"
             ]
         },{
             "name": "FLLM CLI Agent List",
@@ -328,7 +349,7 @@
                 "agent",
                 "list",
                 "--instance-id",
-                "1e22cd2a-7b81-4160-b79f-f6443e3a6ac2"
+                "d540d243-d4ed-43f6-890e-8bc1342f885c"
             ]
         },
         {
@@ -349,11 +370,12 @@
                 "agent",
                 "upsert",
                 "--instance-id",
-                "1e22cd2a-7b81-4160-b79f-f6443e3a6ac2",
+                "d540d243-d4ed-43f6-890e-8bc1342f885c",
                 "--name",
-                "interest-rates3",
+                "cjg-ir3",
                 "--body",
-                "{type:knowledge-management,name:interest-rates3,description:'Knowledge Management Agent that analyzes minimum interest rates.',indexing_profile_object_id:'/instances/1bc45134-6985-48b9-9466-c5f70ddaaa65/providers/FoundationaLLM.Vectorization/indexingprofiles/AzureAISearch_Default_001',text_embedding_profile_object_id:'/instances/1bc45134-6985-48b9-9466-c5f70ddaaa65/providers/FoundationaLLM.Vectorization/textembeddingprofiles/AzureOpenAI_Embedding',language_model:{type:openai,provider:microsoft,temperature:0,use_chat:true,api_endpoint:'FoundationaLLM:AzureOpenAI:API:Endpoint',api_key:'FoundationaLLM:AzureOpenAI:API:Key',api_version:'FoundationaLLM:AzureOpenAI:API:Version',version:'FoundationaLLM:AzureOpenAI:API:Completions:ModelVersion',deployment:'FoundationaLLM:AzureOpenAI:API:Completions:DeploymentName'},sessions_enabled:true,conversation_history:{enabled:true,max_history:5},gatekeeper:{use_system_setting:false,options:[]},orchestrator:LangChain,prompt_object_id:/instances/1e22cd2a-7b81-4160-b79f-f6443e3a6ac2/providers/FoundationaLLM.Prompt/prompts/interest-rates-analyst}"
+                //"{type:knowledge-management,name:interest-rates3,description:'Knowledge Management Agent that analyzes minimum interest rates.',indexing_profile_object_id:'/instances/1bc45134-6985-48b9-9466-c5f70ddaaa65/providers/FoundationaLLM.Vectorization/indexingprofiles/AzureAISearch_Default_001',text_embedding_profile_object_id:'/instances/1bc45134-6985-48b9-9466-c5f70ddaaa65/providers/FoundationaLLM.Vectorization/textembeddingprofiles/AzureOpenAI_Embedding',language_model:{type:openai,provider:microsoft,temperature:0,use_chat:true,api_endpoint:'FoundationaLLM:AzureOpenAI:API:Endpoint',api_key:'FoundationaLLM:AzureOpenAI:API:Key',api_version:'FoundationaLLM:AzureOpenAI:API:Version',version:'FoundationaLLM:AzureOpenAI:API:Completions:ModelVersion',deployment:'FoundationaLLM:AzureOpenAI:API:Completions:DeploymentName'},sessions_enabled:true,conversation_history:{enabled:true,max_history:5},gatekeeper:{use_system_setting:false,options:[]},orchestrator:LangChain,prompt_object_id:/instances/d540d243-d4ed-43f6-890e-8bc1342f885c/providers/FoundationaLLM.Prompt/prompts/interest-rates-analyst}"
+                "{type:knowledge-management,name:cjg-ir3,description:'Knowledge Management Agent that analyzes minimum interest rates.',language_model:{type:openai,provider:microsoft,temperature:0,use_chat:true,api_endpoint:'FoundationaLLM:AzureOpenAI:API:Endpoint',api_key:'FoundationaLLM:AzureOpenAI:API:Key',api_version:'FoundationaLLM:AzureOpenAI:API:Version',version:'FoundationaLLM:AzureOpenAI:API:Completions:ModelVersion',deployment:'FoundationaLLM:AzureOpenAI:API:Completions:DeploymentName'},sessions_enabled:true,conversation_history:{enabled:true,max_history:5},gatekeeper:{use_system_setting:false,options:[]},orchestration_settings:{orchestrator:AzureOpenAIDirect,agent_parameters:{},endpoint_configuration:{endpoint:'FoundationaLLM:AzureOpenAI:API:Endpoint',api_key:'FoundationaLLM:AzureOpenAI:API:Key',api_version:'FoundationaLLM:AzureOpenAI:API:Version',operation_type:'FoundationaLLM:AzureOpenAI:API:OperationType'},model_parameters:{temperature:0.8,max_new_tokens:1000,deployment_name:mistralai-mixtral-8x7b-v01-6}},prompt_object_id:/instances/d540d243-d4ed-43f6-890e-8bc1342f885c/providers/FoundationaLLM.Prompt/prompts/cjg-ir3}"
             ]
         },
         {
@@ -374,7 +396,7 @@
                 "agent",
                 "show",
                 "--instance-id",
-                "1e22cd2a-7b81-4160-b79f-f6443e3a6ac2",
+                "d540d243-d4ed-43f6-890e-8bc1342f885c",
                 "--name",
                 "interest-rates2"
             ]
@@ -397,7 +419,7 @@
                 "agent",
                 "delete",
                 "--instance-id",
-                "1e22cd2a-7b81-4160-b79f-f6443e3a6ac2",
+                "d540d243-d4ed-43f6-890e-8bc1342f885c",
                 "--name",
                 "interest-rates2",
                 "--yes"
@@ -419,7 +441,7 @@
                 "prompt",
                 "list",
                 "--instance-id",
-                "1e22cd2a-7b81-4160-b79f-f6443e3a6ac2"
+                "d540d243-d4ed-43f6-890e-8bc1342f885c"
             ]
         },
         {
@@ -440,7 +462,7 @@
                 "prompt",
                 "upsert",
                 "--instance-id",
-                "1e22cd2a-7b81-4160-b79f-f6443e3a6ac2",
+                "d540d243-d4ed-43f6-890e-8bc1342f885c",
                 "--name",
                 "FLLMDocumentation",
                 "--body",
@@ -465,7 +487,7 @@
                 "prompt",
                 "show",
                 "--instance-id",
-                "1e22cd2a-7b81-4160-b79f-f6443e3a6ac2",
+                "d540d243-d4ed-43f6-890e-8bc1342f885c",
                 "--name",
                 "FLLMDocumentation"
             ]
@@ -488,7 +510,7 @@
                 "prompt",
                 "delete",
                 "--instance-id",
-                "1e22cd2a-7b81-4160-b79f-f6443e3a6ac2",
+                "d540d243-d4ed-43f6-890e-8bc1342f885c",
                 "--name",
                 "interest-rates2",
                 "--yes"
